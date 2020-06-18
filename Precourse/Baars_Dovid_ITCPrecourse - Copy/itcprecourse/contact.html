@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link href="./style.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
+</head>
+<body class="body">
+    <div class="topnav">
+        <div class="centernav"> <a href="index.html">Home</a></div>
+        <div class="leftnav"> <a href="contact.html">Contact</a></div>
+        <div class="rightnav"> <a href="about.html">About</a></div>
+    </div> 
+		<div class="wrapper">
+			<h1 class= "title">Contact Me</h1>
+            <p>Fill out the form below and I will reach out to you shortly.</p>
+            
+            <form method="POST" action="https://formspree.io/mzbjepjy" target="_blank" class="form">
+                
+              <fieldset>
+                          <legend>Your contact information</legend>
+                          
+                          <span class="nowrap">
+                          <label for="firstname">First Name </label>
+                          <input type="text" id="firstname" name="firstname" required="" autofocus>
+                          </span>
+
+                          <span class="nowrap">
+                          <label for="lastname">Last Name </label>
+                          <input type="text" id="lastname" name="lastname">
+                          </span>
+
+                          <span class="nowrap">
+                          <label for="phone">Phone Number</label>
+                          <input type="tel" id="phone" name="phone">
+                          </span>
+
+                          <span class="nowrap">
+                          <label for="email">Email</label>
+                          <input type="email" id="email" name="email" required="">
+                          </span>
+                          
+                          <p id="howreply">How would you like me to reply?</p>
+                          <label>
+                              <input type="radio" name="replytype" value="phone" checked> Phone call
+                          </label>
+                          <label>
+                              <input type="radio" name="replytype" value="email"> Email
+                          </label>                       
+                          <label>
+                              <input type="radio" name="replytype" value="whatsapp"> Whatsapp               
+                          </label>                    
+              </fieldset>
+              <fieldset>
+                          <legend>How can I help you </legend>
+                          <label for="comments">Message:</label>
+                          <textarea id="comments" name="comments" required=""></textarea>
+                          <label>
+                              <input id="subscribe" name="subscribe" type="checkbox" value="subscribe">Add me to your email list
+                          </label>
+                          <button type="submit">Submit</button>
+              </fieldset>
+
+            </form>
+      </div>
+    <div>
+      <footer class="footer">
+          <ul>
+              <li class="sitecodes">
+                  This page was built using<div id="codinglanguages"></div>by Dovid Baars
+              </li>
+              <li class="sitemap">
+                  <a class="sitelink" href="contact.html">Contact</a>
+              </li>
+              <li class="sitemap">
+                  <a class="sitelink" href="index.html">Home</a>
+              </li>
+              <li class="sitemap">
+                  <a class="sitelink" href="about.html">About</a>
+              </li>
+          </ul>                           
+      </footer>
+    </div> 
+  </section>
+    <script src="portfolio.js"></script>     
+</body>
+</html>
